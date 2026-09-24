@@ -2,8 +2,6 @@
 
 AutoMart is a dynamic, front-end web application built with React that serves as an interactive car catalog. It demonstrates a complete implementation of CRUD (Create, Read, Update, Delete) operations and global state management using React's Context API.
 
-(📝 Note to recruiter: This project showcases my ability to manage complex UI states, integrate RESTful APIs, and build modular React components.)
-
 ✨ Features
 
 Display Products: View a beautifully styled grid of car listings with images, descriptions, and prices.
@@ -91,4 +89,4 @@ Add user authentication and authorization.
 
 Implement pagination and a search/filter feature for cars.
 
-Coded with ❤️ by [Your Name]
+Coded with ❤️ by Johanes
