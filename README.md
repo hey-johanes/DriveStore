@@ -60,7 +60,7 @@ Installation
 
 Clone the repository
 
-git clone https://github.com/yourusername/automart.git
+git clone https://github.com/hey-johanes/DriveStore.git
 cd automart
 
 
