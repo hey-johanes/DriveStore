@@ -1,70 +1,94 @@
-# Getting Started with Create React App
+🚗 AutoMart (React E-Commerce Catalog)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+AutoMart is a dynamic, front-end web application built with React that serves as an interactive car catalog. It demonstrates a complete implementation of CRUD (Create, Read, Update, Delete) operations and global state management using React's Context API.
 
-## Available Scripts
+(📝 Note to recruiter: This project showcases my ability to manage complex UI states, integrate RESTful APIs, and build modular React components.)
 
-In the project directory, you can run:
+✨ Features
 
-### `npm start`
+Display Products: View a beautifully styled grid of car listings with images, descriptions, and prices.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Add New Cars: A dedicated form to dynamically add new vehicles to the catalog.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Edit Existing Cars: Inline or modal editing capabilities to update car details (Price, Name, Description, Image URL).
 
-### `npm test`
+Delete Cars: Remove vehicles from the catalog with immediate UI updates.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Interactive Shopping Cart:
 
-### `npm run build`
+Add items to the cart.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Increment/Decrement quantities.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Real-time calculation of total prices based on quantity.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+🛠️ Tech Stack
 
-### `npm run eject`
+Frontend: React 19 (Hooks)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+State Management: Context API (ProductContext)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Styling: Pure CSS / Responsive Design
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Icons: Lucide React
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+HTTP Client: Axios
 
-## Learn More
+Mock Backend: JSON Server
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+📂 Project Architecture highlight
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+The project is structured for scalability and separation of concerns:
 
-### Code Splitting
+src/context/: Contains the ProductContext.jsx which centralizes the business logic, API calls, and state management, keeping components clean.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+src/Component/: Reusable UI components (ProductCard, AddProduct, EditProduct).
 
-### Analyzing the Bundle Size
+src/data/: Mock data initialization.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+🚀 Getting Started
 
-### Making a Progressive Web App
+To run this project locally, follow these steps:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Prerequisites
 
-### Advanced Configuration
+Node.js (v14 or higher)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+npm or yarn
 
-### Deployment
+Installation
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Clone the repository
 
-### `npm run build` fails to minify
+git clone https://github.com/yourusername/automart.git
+cd automart
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+Install dependencies
+
+npm install
+
+
+Start the Mock Backend (JSON Server)
+This will run the mock API locally on port 8000.
+
+npm run server
+
+
+Start the React Application
+Open a new terminal window and run:
+
+npm start
+
+
+The app will open in your browser at http://localhost:3000.
+
+💡 Future Improvements
+
+Implement a persistent real database (e.g., MongoDB, PostgreSQL) via a Node.js/Express backend.
+
+Add user authentication and authorization.
+
+Implement pagination and a search/filter feature for cars.
+
+Coded with ❤️ by [Your Name]
